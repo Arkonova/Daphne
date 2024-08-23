@@ -1,4 +1,4 @@
-# daphne/streaming.py
+
 from queue import Queue
 from threading import Thread
 from tqdm import tqdm

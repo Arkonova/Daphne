@@ -1,16 +1,8 @@
 import os
 import sys
-
-
 def set_working_directory():
-    # Определяем путь к файлу, который импортирует библиотеку
     script_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
-    print(script_dir)
-    # Устанавливаем рабочую директорию
     os.chdir(script_dir)
-
-
-# Вызываем функцию при импорте библиотеки
 set_working_directory()
 from .loader import load_csv, load_json, load_from_db
 from .preprocess import fill_missing, normalize, remove_duplicates, scale_data

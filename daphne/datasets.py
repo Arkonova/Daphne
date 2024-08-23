@@ -14,5 +14,4 @@ def preprocess_for_model(dataset, task_type):
         dataset = dataset.map(lambda x: {'input_ids': x['text']})
     elif task_type == 'image_generation':
         dataset = dataset.map(lambda x: {'image': x['image']})
-    # Добавить обработку для других задач
     return dataset

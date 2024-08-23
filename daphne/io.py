@@ -3,7 +3,7 @@ import pandas as pd
 
 
 def save_dataset(dataset, path='processed_data.csv', format='csv'):
-    current_dir = os.getcwd()  # Получаем текущую директорию
+    current_dir = os.getcwd()
     save_path = os.path.join(current_dir, path)
 
     if format == 'csv':

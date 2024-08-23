@@ -27,7 +27,6 @@ def prepare_data_for_task(dataset, task_type):
     elif task_type == 'image_classification':
         if 'image' in structure and 'label' in structure:
             needs_transformation = True
-            # Здесь может потребоваться преобразование изображений
             dataset = dataset.map(lambda x: {'image': x['image'], 'label': x['label']},
                                   remove_columns=[key for key in structure if key not in ['image', 'label']])
 
@@ -38,11 +37,10 @@ def prepare_data_for_task(dataset, task_type):
                                   remove_columns=[key for key in structure if key != 'text'])
 
     if not needs_transformation:
-        print("Преобразование не требуется, данные будут использоваться как есть.")
+        print("No conversion is required, the data will be used as is.")
 
     return dataset
 
 
 def hash_text(text):
-    # Простейшее хеширование текста для демонстрации
     return hash(text)
