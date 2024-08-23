@@ -1,0 +1,8 @@
+pandas
+dask
+datasets
+tensorflow-datasets
+scikit-learn
+matplotlib
+seaborn
+joblib
