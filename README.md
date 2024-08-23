@@ -16,6 +16,25 @@ Daphne is a Python library designed for efficient data processing, catering to b
 - **Resource Efficiency:** Optimized for minimal memory footprint even with large datasets.
 - **Data Compression:** Save processed data in compressed formats for efficient storage.
 
+## Installation
+
+### Installation via PyPI (Coming Soon)
+*Note: The installation via PyPI is currently under development and will be available soon.*
+```bash
+pip install daphne
+```
+
+## Installation from the latest [release](https://github.com/Arkonova/daphne/releases)
+
+- **1** . Download the latest version of the .whl file from the releases page.
+- **2** . Install the package using pip:
+  - ```bash
+    pip install daphne-x.y.z.whl
+    ```
+    - Replace x.y.z with the appropriate release version.
+
+
+
 ## Quick Start
 ```python
 import daphne as dp
